@@ -1,31 +1,47 @@
 {
   "name": "maskify",
-  "description": "Modern String Masking Library",
+  "description": "Modern String Masking Library - A type-safe TypeScript library for applying masks to strings with support for customizable tokens, reverse processing, and validation",
   "version": "1.0.0",
   "author": "Augusto Preis Tomasi <augustopreisthomasi@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AugustoPreis/maskify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AugustoPreis/maskify/issues"
+  },
+  "homepage": "https://github.com/AugustoPreis/maskify#readme",
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
+    "build": "tsup",
+    "build:watch": "tsup --watch",
     "clean": "rm -rf dist",
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext .ts",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run clean && npm test && npm run type-check && npm run build"
   },
   "keywords": [
     "mask",
+    "masking",
     "string",
     "format",
+    "formatter",
     "input",
     "typescript",
     "validation",
     "pattern",
-    "masking"
+    "phone",
+    "credit-card",
+    "currency",
+    "date",
+    "cpf",
+    "cnpj"
   ],
   "devDependencies": {
     "@types/jest": "^29.5.12",
@@ -37,6 +53,7 @@
     "jest": "^29.7.0",
     "prettier": "^3.4.2",
     "ts-jest": "^29.1.2",
+    "tsup": "^8.5.1",
     "typescript": "^5.7.2"
   },
   "engines": {
@@ -44,9 +61,9 @@
   },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [
