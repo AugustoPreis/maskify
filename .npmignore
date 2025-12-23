@@ -1,0 +1,40 @@
+# Development files
+*.test.ts
+*.spec.ts
+test/
+coverage/
+.vscode/
+.idea/
+
+# Config files
+tsconfig.json
+jest.config.js
+eslint.config.mjs
+tsup.config.ts
+
+# Source files
+src/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
