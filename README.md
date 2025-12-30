@@ -1,4 +1,4 @@
-# Masker JS
+# Maskable
 
 A simple and powerful string masking library for formatting phone numbers, credit cards, dates, and more.
 
