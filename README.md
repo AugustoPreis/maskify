@@ -34,7 +34,7 @@ Use these characters in your mask patterns:
 | `A`   | Uppercase letters  | `AAA` → `ABC`         |
 | `a`   | Lowercase letters  | `aaa` → `abc`         |
 | `S`   | Any letter         | `SSS` → `AbC`         |
-| `*`   | Letters or numbers | `***` → `A1b`         |
+| `#`   | Letters or numbers | `###` → `A1b`         |
 
 ### Basic Formatting
 
