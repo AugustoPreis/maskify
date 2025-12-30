@@ -1,7 +1,7 @@
 {
   "name": "maskable",
   "description": "Modern String Masking Library - A type-safe TypeScript library for applying masks to strings with support for customizable tokens, reverse processing, and validation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Augusto Preis Tomasi <augustopreisthomasi@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
